@@ -1,0 +1,71 @@
+.about {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 70% 30%;
+}
+.about-me {
+  background-image: url("./../../../../assets/images/perfil-montaña.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  .about-me__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #ffffff00, #fafafa 40%);
+
+    .about-me__texts {
+      width: 40%;
+      margin: 150px 80px 150px 0;
+      display: flex;
+      flex-direction: column;
+      .about-me__title {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .about-me__description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.phrase {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  width: 140px;
+  padding: 20px 30px;
+  background-color: var(--neutral-900);
+  border-radius: 3px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 49.5%;
+    width: 1px;
+    height: 70px;
+    background-color: var(--neutral-400);
+  }
+  .phrase__img-container {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--neutral-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    .phrase__img {
+      box-sizing: border-box;
+      fill: var(--primary-500);
+      height: 40px;
+    }
+  }
+  .phrase__text {
+    color: var(--neutral-50);
+    text-align: center;
+    font-size: 18px;
+  }
+}

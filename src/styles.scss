@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Lato";
+  src: url(./assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Lato-black";
+  src: url(./assets/fonts/Lato-Black.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+:root {
+  --white: white;
+  --linear-gradient: linear-gradient(135deg, #eaeaea, #fafafa);
+
+  --primary-50: #feedea;
+  --primary-100: #fdd3cb;
+  --primary-200: #fcb6a8;
+  --primary-300: #fb9885;
+  --primary-400: #fa826a;
+  --primary-500: #f96c50;
+  --primary-600: #f86449;
+  --primary-700: #f75940;
+  --primary-800: #f64f37;
+  --primary-900: #f53d27;
+
+  --neutral-50: #e6e6e6;
+  --neutral-100: #bfbfbf;
+  --neutral-200: #959595;
+  --neutral-300: #6b6b6b;
+  --neutral-400: #4b4b4b;
+  --neutral-500: #2b2b2b;
+  --neutral-600: #262626;
+  --neutral-700: #202020;
+  --neutral-800: #1a1a1a;
+  --neutral-900: #101010;
+}
+body {
+  background-color: var(--neutral-500);
+}
