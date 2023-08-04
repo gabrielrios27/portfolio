@@ -1,6 +1,10 @@
-<main class="main">
+<main class="main" #main>
   <app-header></app-header>
-  <app-home></app-home>
-  <app-about></app-about>
+  <app-home
+    (onProjects)="scrollToProjects()"
+    (onAbout)="scrollToAbout()"
+  ></app-home>
+  <app-about #about></app-about>
+  <div id="projects"></div>
   <app-projects></app-projects>
 </main>

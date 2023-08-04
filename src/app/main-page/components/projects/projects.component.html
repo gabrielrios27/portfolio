@@ -1,1 +1,51 @@
-
+<section class="projects" id="projects">
+  <h2 class="projects__title">Proyectos</h2>
+  <div class="projects__container">
+    <div class="card" *ngFor="let project of projectsList">
+      <ngb-carousel
+        class="carousel"
+        [interval]="7000"
+        #carousel
+        [pauseOnFocus]="pauseOnFocus"
+        (slide)="onSlide($event)"
+      >
+        <ng-template ngbSlide *ngFor="let img of project.images; index as i">
+          <img
+            class="carousel__img"
+            src="../../../../assets/images/{{ img }}"
+            alt="My image {{ i + 1 }} description"
+          />
+        </ng-template>
+      </ngb-carousel>
+      <div class="card__details">
+        <div>
+          <h4 class="card__title">{{ project.title }}</h4>
+          <p class="card__description">
+            {{ project.description }}
+          </p>
+          <p class="card__description card__description--tecnologies">
+            {{ project.technologies }}
+          </p>
+        </div>
+        <div class="icons">
+          <a
+            class="icons__link"
+            *ngIf="project.linkWeb !== ''"
+            href="{{ project.linkWeb }}"
+            target="_blank"
+            ><img
+              src="../../../../assets/icons/up-right-from-square-solid.svg"
+              alt="Icono de ver página"
+              class="icons__icon"
+          /></a>
+          <a class="icons__link" href="{{ project.linkCode }}" target="_blank"
+            ><img
+              src="../../../../assets/icons/github-white.svg"
+              alt="Icono GitHub"
+              class="icons__icon icons__icon--github"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

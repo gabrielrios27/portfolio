@@ -11,17 +11,17 @@
         alt="Foto de Gabriel Rios desarrollador Front End"
       />
     </div>
-    <div class="cover__container-btns">
-      <button class="cover__btn">Proyectos</button>
-      <button class="cover__btn">Ponte en contacto</button>
-    </div>
-    <div class="chip">
-      <p class="chip__text">Front end</p>
-    </div>
     <div class="sayHi">
       <h1 class="sayHi__title"><span>Hola! </span>Soy Gabriel Rios</h1>
 
       <p class="sayHi__description">Desarrollador Front-end.</p>
+    </div>
+    <div class="cover__container-btns">
+      <button class="cover__btn" (click)="onGoToAbout()">Sobre mí</button>
+      <button class="cover__btn" (click)="onGoToProjects()">Proyectos</button>
+    </div>
+    <div class="chip">
+      <p class="chip__text">Front end</p>
     </div>
   </div>
 </section>

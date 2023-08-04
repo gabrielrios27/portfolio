@@ -26,6 +26,7 @@
       }
       .about-me__description {
         font-size: 18px;
+        margin: 0;
       }
     }
   }
@@ -67,5 +68,30 @@
     color: var(--neutral-50);
     text-align: center;
     font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .phrase {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .about-me {
+    background-image: none;
+    width: 350px;
+    margin: 0 auto;
+    .about-me__container {
+      background: #fafafa;
+
+      .about-me__texts {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 30px;
+      }
+    }
   }
 }

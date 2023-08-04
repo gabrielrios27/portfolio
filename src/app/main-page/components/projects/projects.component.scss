@@ -1,0 +1,84 @@
+.projects {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+
+  .projects__title {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .projects__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.card {
+  width: 400px;
+  border: none;
+}
+.carousel {
+  width: 400px;
+  .carousel__img {
+    width: 400px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+}
+.card__details {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .card__title {
+    font-family: "Lato-black", sans-serif;
+  }
+  .card__description {
+    margin-bottom: 10px;
+  }
+  .card__description--tecnologies {
+    color: var(--primary-500);
+  }
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 5px;
+
+  .icons__link {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: 7px 10px;
+    &:hover {
+      transform: scale(1.2);
+    }
+    .icons__icon {
+      width: 1.2em;
+    }
+    .icons__icon--github {
+      width: 1.3em;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 350px;
+  }
+  .carousel {
+    width: 350px;
+    .carousel__img {
+      width: 350px;
+      height: 262px;
+    }
+  }
+}

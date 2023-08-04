@@ -1,3 +1,8 @@
+import {
+  NgbCarouselModule,
+  NgbTooltipModule,
+} from '@ng-bootstrap/ng-bootstrap';
+
 import { AboutComponent } from './components/about/about.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from './components/contact/contact.component';
@@ -19,6 +24,11 @@ import { SkillsComponent } from './components/skills/skills.component';
     ProjectsComponent,
     ContactComponent,
   ],
-  imports: [CommonModule, MainPageRoutingModule],
+  imports: [
+    CommonModule,
+    MainPageRoutingModule,
+    NgbCarouselModule,
+    NgbTooltipModule,
+  ],
 })
 export class MainPageModule {}
